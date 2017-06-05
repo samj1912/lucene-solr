@@ -1,0 +1,9 @@
+{
+  "default": {}, 
+  "linear-model-1500829990": {
+    "rq": "{!ltr model=linear-model-1500829990 reRankDocs=30 efi.query=$query}"
+  }, 
+  "tree-model-P@10-trees-100-1500832435": {
+    "rq": "{!ltr model=tree-model-P@10-trees-100-1500832435 reRankDocs=30 efi.query=$query}"
+  }
+}

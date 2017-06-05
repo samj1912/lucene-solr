@@ -2653,6 +2653,8 @@ public class SolrCLI {
         runDihExample(cli);
       } else if ("techproducts".equals(exampleType) || "schemaless".equals(exampleType)) {
         runExample(cli, exampleType);
+      } else if ("wikipedia".equals(exampleType) || "schemaless".equals(exampleType)) {
+        runExample(cli, exampleType);
       } else {
         throw new IllegalArgumentException("Unsupported example "+exampleType+
             "! Please choose one of: cloud, dih, schemaless, or techproducts");
