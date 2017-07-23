@@ -12,7 +12,7 @@ then download and index the dump:
 	
   cd py-solr-buzzwords
   # get the simple wikipedia dump
-  wget FIXME 
+  wget https://github.com/bloomberg/lucene-solr/releases/download/1.0.0/simplewiki-20170501-pages-articles.json.gz 
   ./index_wikipedia.py simplewiki-20170501-pages-articles.json.gz
 
 install the needed python packages: 
@@ -40,7 +40,7 @@ First you need to load the features in solr:
 
 Then, you can extract features for a query-document by using the ltr document document transformer, for example try the `berlin` query:
 
-  http://localhost:8983/solr/wikipedia/select?indent=on&q=asd&wt=json&fl=title,score,[features%20efi.query=berlin]
+  http://localhost:8983/solr/wikipedia/select?indent=on&q=berlin&wt=json&fl=title,score,[features%20efi.query=berlin]
 
 ## 3. Train a linear model
 
